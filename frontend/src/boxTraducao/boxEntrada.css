@@ -1,0 +1,120 @@
+.container-traducao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-entrada {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 10px;
+    width: 40%;
+   
+    border-radius: 16px;
+}
+
+.container-entrada select {
+    outline: none;
+    margin-left: 10px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 200px;
+    font-size: 14px;
+    color: #2962FF;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.container-entrada form {
+    margin: 10px;
+    width: 100%;
+}
+
+.container-entrada textarea {
+    background-color: #DADCE0;
+    font-size: 18px;
+    color: #3C4043;
+    border: none;
+    margin-left: 10px;
+    outline: none;
+    resize: none;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+   
+    padding: 10px;
+}
+
+.container-entrada form button {
+    border: none;
+    border-bottom: 2px solid  #2962FF;
+    background: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #2962FF;
+    font-weight: bolder;
+    font-size: 14px;
+    padding: 8px;
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+    transition: border-bottom 0.2s ease;
+    
+}
+
+.container-entrada form button:hover {
+    border-bottom: 0;
+    border-radius: 8px;
+    background-color: #DADCE0;
+   transition:  background-color 0.2s ease-in;
+
+}
+.saida{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding: 10px;
+    width: 40%;
+    border-bottom: 2px solid #2962FF;
+    height: 200px;
+}
+
+.saida textarea{
+    font-size: 18px;
+    color: #3C4043;
+    border: none;
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    resize: none;
+    width: 100%;
+    
+    
+}
+.saida textarea:placeholder-shown{
+    padding-left:18px;
+}
+
+@media screen and (max-width:1000px){
+    .container-traducao{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: center;
+    }
+    .container-entrada{
+        width: 90%;
+    }
+    .container-entrada form button{
+        width: 100%;
+        border: 1px solid #2962FF;
+        border-radius: 8px;
+    }
+    .saida{
+        width: 90%;
+    }
+}

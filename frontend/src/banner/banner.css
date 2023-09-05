@@ -1,0 +1,16 @@
+.titulo{
+    display: flex;
+    align-items: center;
+    background-color: #6688EE;
+    color: #FFF;
+    padding: 10px;
+    height: 100px;
+}
+.titulo strong{
+    font-weight: bolder;
+    font-size: 49px;
+}
+.titulo p{
+    margin-left: 20px;
+    font-size: 40px;
+}
